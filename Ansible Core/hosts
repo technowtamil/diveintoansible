@@ -1,0 +1,20 @@
+[control]
+core ansible_connection=local
+
+[rhel]
+rhel01
+#centos1 ansible_user=root ansible_port=2222
+
+
+[ubuntu]
+ubuntu1
+#ubuntu2 ansible_become=true ansible_become_pass=password
+
+#[ubuntu:vars]
+#ansible_become=true
+#ansible_become_pass=Qwert!202
+#ansible_port=4444
+
+#[awsap01:children]
+#rhel
+#ubuntu
